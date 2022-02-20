@@ -24,12 +24,12 @@ before_script:
 build-job:
   stage: build
   script:
-    - echo "build job"
+    - docker build -t myapp .
 
 test-job:
   stage: test
   script:
-    - echo "test job"
+    - docker run myapp pytest
 
 deploy-job:
   stage: deploy

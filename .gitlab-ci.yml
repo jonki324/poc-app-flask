@@ -1,9 +1,9 @@
 image:
   name: docker:stable
 
-services:
-  - name: docker:dind
-    alias: dind
+# services:
+#   - name: docker:dind
+#     alias: dind
 
 variables:
   DOCKER_TLS_CERTDIR: ""
